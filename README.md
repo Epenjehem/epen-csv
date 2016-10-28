@@ -45,7 +45,7 @@ import (
 func main() {
 	settings := map[string]interface{}{
 		"comma": '\t',
-    "trimLeadingSpace": false,
+    		"trimLeadingSpace": false,
 	}
 
 	r, err := epen_csv.NewReport("test-data.csv", settings)
