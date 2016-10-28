@@ -135,22 +135,6 @@ func (r *EpenCSV) GetMedian(column int) (float64, error) {
 	}
 }
 
-/*func (r *EpenCSV) Sort(column int) {
-
-	column--
-
-	for _, row := range r.DataRows {
-		data, err := strconv.ParseFloat(row[column], 64)
-
-		if err != nil {
-			return .0, err
-			break
-		}
-
-		data_holder = append(data_holder, data)
-	}
-}*/
-
 func (r *EpenCSV) Print() {
 	// Print the header
 	for index, row := range r.Header {
